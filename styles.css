@@ -1,0 +1,87 @@
+/* Body */
+body {
+    min-height: 100vh;
+    font: 13px sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+/* Tags */
+h1 {
+    display: block;
+    width: 100%;
+    color: rgb(54, 107, 160);
+    border-bottom: 4px solid rgb(54, 107, 160);
+}
+
+h4 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 1%;
+}
+
+/* Contenedor Principal */
+.contenedorPrincipal {
+    display: flex; flex-direction: column; 
+    width: 60%;
+    margin: 0 auto;
+}
+
+        .contenedorPrincipal header {
+            color: white;
+            background-color: rgb(54, 107, 160);
+            padding-left: 2%;
+            width: 100%;
+        }
+            .contenedorPrincipal header h1 {
+                color: white;
+                border-bottom: none;
+            }
+
+        .contenedorPrincipal main {
+            display: flex;
+            width: 100%;
+        }
+
+            .columnaIzquierda, .columnaDerecha {
+                display: flex; flex-direction: column; justify-content: start; align-items: start;
+                padding-left: 2%; padding-right: 2%;
+            }
+            .columnaIzquierda {
+                width: 70%;
+                background-color: white;
+            }
+            .columnaDerecha {
+                width: 30%;
+                background-color: rgb(224, 223, 223);
+            }
+                    .dato {
+                        display: flex; gap: 5%; align-items: center; justify-content: start
+                    }
+                        .dato i {color: rgb(54, 107, 160);}
+            
+            .skill {
+                display: flex; flex-direction: column; 
+            }
+            .skill h4 {margin-bottom: 2%; margin-top: 4%;}
+
+            .barra {
+                height: 15px;
+                border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+                background-color: rgb(54, 107, 160);
+            }
+                        #barra1 {width: 100%}
+                        #barra2 {width: 85%}
+                        #barra3 {width: 90%}
+                        #barra4 {width: 95%}
+
+            .educacion, #skills, #informacion {
+                width: 100%;
+            }
+                .educacion ul {
+                    margin-right: 10%;
+                    width: 80%;
+                    display: flex; flex-direction: column; gap: 8px;
+                }
